@@ -24,9 +24,13 @@ public class DateUtil {
     private static final String fullChineseFormat="yyyy年MM月dd日 HH时mm分ss秒";
     private static final String [] WEEKS={"星期日","星期一","星期二","星期三","星期四","星期五","星期六"};
 
+    public static void main(String[] args) {
+        String yestoday=getPastDateString(new Date(),1);
+        System.out.println(yestoday);
+    }
 
     /**
-     * 得到指定时间的时间日期格式
+     * 得到指定时间的时间日期格式字符串
      * @param date 指定的时间
      * @param format 时间日期格式
      * @return
@@ -35,7 +39,17 @@ public class DateUtil {
           DateFormat df=new SimpleDateFormat(format);
             return df.format(date);
        }
-
+    /**
+     * 按照日期格式正则，转化字符串为日期类型数据
+     * @param dateString
+     * @param pattern
+     * @return
+     * @throws Exception
+     */
+     public static Date parserDate(String dateString, String pattern) throws Exception {
+         SimpleDateFormat sdf=new SimpleDateFormat(pattern);
+         return sdf.parse(dateString);
+     }
 
     /**
     * 判断是否是润年
@@ -143,6 +157,20 @@ public class DateUtil {
          cal.add(Calendar.YEAR, years);
          time=cal.getTime();
          return time;
+     }
+
+    /**
+     * 获取某个日期，前几天的字符串格式：yyyy-MM-dd
+     * @param date  某个时间点
+     * @param days  过去天数
+     * @return  yyyy-MM-dd字符串
+     */
+     public static String getPastDateString(Date date,int days){
+         Calendar calendar=Calendar.getInstance();
+         calendar.setTime(date);
+         calendar.set(Calendar.DAY_OF_MONTH, calendar.get(Calendar.DAY_OF_MONTH) - days);
+         Date today=calendar.getTime();
+         return getFormatDateTime(today,DateUtil.yyyyMMddFormat);
      }
 
 }
