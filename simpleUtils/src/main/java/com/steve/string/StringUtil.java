@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @Description: TODO
+ * @Description: 字符串工具类
  * @Author: SteveTao
  * @Date: 2019/8/2010:11
  **/
