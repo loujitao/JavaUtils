@@ -45,11 +45,13 @@ public class PropertiesUtil {
         props.setProperty(key, value);
     }
 
+    //主要使用方法
     public static String getProperty(String key) {
         checkProps();
        return  props.getProperty(key);
     }
 
+    //使用案例
     public static void main(String[] args) {
         PropertiesUtil.setConfigFilePath("/db.properties");
         String str = PropertiesUtil.getProperty("mysql.name");
