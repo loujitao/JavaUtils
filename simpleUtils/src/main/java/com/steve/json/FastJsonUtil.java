@@ -12,6 +12,9 @@ import java.util.Map;
  * @Date: 2019/8/1915:40
  **/
 public class FastJsonUtil {
+    private FastJsonUtil() {
+    }
+
     /**
      * 功能描述：把JSON数据转换成指定的java对象
      * @param jsonData JSON数据

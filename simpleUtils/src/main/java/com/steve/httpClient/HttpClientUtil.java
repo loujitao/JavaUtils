@@ -65,7 +65,8 @@ public class HttpClientUtil {
 	public static final Charset UTF_8 = Charset.forName(CHARSET_UTF8);
 
 	public static final Charset GBK = Charset.forName(CHARSET_GBK);
-	
+
+
 	public static String JsonPostInvoke(String url, Map<String, Object> params, String charsets) 
 			throws Exception{  
         System.out.println("post方式提交json数据开始......");

@@ -15,6 +15,7 @@ public class SecreptUtil {
   // 解密工具
   private Cipher decryptCipher = null;
 
+
   /**  
    * 将byte数组转换为表示16进制值的字符串， 如：byte[]{8,18}转换为：0813， 和public static byte[]  
    * hexStr2ByteArr(String strIn) 互为可逆的转换过程
@@ -69,8 +70,7 @@ public class SecreptUtil {
    * 默认构造方法，使用默认密钥
    * @throws Exception  
    */
-  public SecreptUtil() throws Exception {
-    this(strDefaultKey);
+  private SecreptUtil() throws Exception {
   }
 
   /**  

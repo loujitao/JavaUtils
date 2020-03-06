@@ -29,6 +29,9 @@ public class DateUtil {
         System.out.println(yestoday);
     }
 
+    private DateUtil() {
+    }
+
     /**
      * 得到指定时间的时间日期格式字符串
      * @param date 指定的时间

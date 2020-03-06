@@ -10,6 +10,9 @@ import java.util.regex.Pattern;
  **/
 public class StringUtil {
 
+    private StringUtil() {
+    }
+
     /**
      * 不为空，null , "null"
      * @param str

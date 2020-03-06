@@ -20,20 +20,21 @@ public class NumberUtil {
     //显示为科学计数法，并取五位小数
     private final static String  SCIENTIFIC_FORMAT="#.#####E0";
 
-
+    private NumberUtil() {
+    }
 
     /**
      * 根据正则格式化数字
      * @param data
      * @return
      */
-    public static String getInt(Double data,String pattern){
+    public static String getNumString(Double data,String pattern){
         return new DecimalFormat(pattern).format(data);
     }
 
 
     public static void main(String[] args) {
-        String result=getInt(123.3323423,NumberUtil.TWO_DECIMAL_FORMAT);
+        String result=getNumString(123.3323423,NumberUtil.TWO_DECIMAL_FORMAT);
         System.out.println(result);
     }
 

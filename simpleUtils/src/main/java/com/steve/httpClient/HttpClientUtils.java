@@ -21,6 +21,9 @@ public class HttpClientUtils {
 
 	private static final Logger log = Logger.getLogger(HttpClientUtils.class);
 
+	private HttpClientUtils() {
+	}
+
 	// 超时时间
 	private static int TIMEOUT = 60 * 1000;
 	/**

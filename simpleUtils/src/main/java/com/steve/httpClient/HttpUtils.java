@@ -26,6 +26,9 @@ public class HttpUtils {
 	
 	public static final String CONTENT_TYPE_JSON_CHARSET_UTF8 = "application/json;charset=utf-8";
 
+	private HttpUtils() {
+	}
+
 	/**
 	 * 用urlconnect  json post 传递参数
 	 */
