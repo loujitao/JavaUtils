@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<superviseData>
+<taskInfo>
+	<taskNo></taskNo>
+	<taskName></taskName>
+<taskStartTime></taskStartTime>
+<status></status>
+	<taskStartUnitNo></taskStartUnitNo>
+<taskStartUnitType></taskStartUnitType>	<unionDeptNo></unionDeptNo>
+	<unionDept>sssssssss</unionDept>
+	<unionRegionNo></unionRegionNo>
+	<unionRegion></unionRegion>
+	<supervisionMatterList></supervisionMatterList>
+	<superviseObjectNo></superviseObjectNo>
+	<superviseObject>
+		<objectType>ssssssss</objectType>
+		<objectName></objectName>
+		<enterpriseCreditCode></enterpriseCreditCode>
+		<credentialsType>ssssssss</credentialsType>
+		<credentialsValue></credentialsValue>
+</superviseObject>
+	<inspectContent></inspectContent>
+	<inspectClaim></inspectClaim>
+	<remark></remark>	
+   <annexExist></annexExist>
+</taskInfo>
+<basisData>
+	<creditAssess>
+		<enterpriseName></enterpriseName>
+<enterpriseIdType></enterpriseIdType>
+		<enterpriseCreditCode></enterpriseCreditCode>
+		<enterpriseMark></enterpriseMark>
+		<enterpriseType></enterpriseType>
+		<estimateTime></estimateTime>
+	</creditAssess>
+	<operatingAbnormal>
+		<abnormalPutdate></abnormalPutdate>
+		<enterpriseName></enterpriseName>
+		<enterpriseCreditCode></enterpriseCreditCode>
+		<abnormalPutrs></abnormalPutrs>
+		<abnormalPutdptm></abnormalPutdptm>
+		<abnormalListDate></abnormalListDate>
+		<abnormalListRreasons></abnormalListRreasons>
+		<abnormalListPutdptm></abnormalListPutdptm>
+	</operatingAbnormal>
+	<seriousIllegal>
+		<illegalPutdate></illegalPutdate>
+		<enterpriseName></enterpriseName>
+		<enterpriseCreditCode></enterpriseCreditCode>
+		<illegalReason></illegalReason>
+		<illegalDepartment></illegalDepartment>
+		<illegalListDate></illegalListDate>
+		<illegalListRreasons></illegalListRreasons>
+		<illegalListPutdptm></illegalListPutdptm>	
+	</seriousIllegal>
+<complaintInfo>
+		<complaintObject></complaintObject>
+		<complaintObjectCertCode></complaintObjectCertCode>
+		<complaintType></complaintType>
+		<complaintTerritory></complaintTerritory>
+		<serviceType></serviceType>
+		<serviceName></serviceName>
+		<disputeDate></disputeDate>
+		<complaintDetail></complaintDetail>
+</complaintInfo>
+<tipInfo>
+	<tipObject></tipObject>
+	<enterpriseCreditCode></enterpriseCreditCode>
+	<tipType></tipType>
+	<tipTerritory></tipTerritory>
+	<serviceType></serviceType>
+	<serviceName></serviceName>
+	<disputeDate></disputeDate>
+	<tipDetail></tipDetail>
+</tipInfo>
+	<riskWarning>
+		<riskObject></riskObject>
+		<riskObjectCertCode></riskObjectCertCode>
+		<domain></domain>
+		<province></province>
+		<title></title>
+		<level></level>
+		<createdAt></createdAt>
+		<source></source>
+		<ruleId></ruleId>
+		<props></props>	
+	</riskWarning>
+</basisData>
+<supervisionProcess>
+	<taskDetails>
+		<taskNo></taskNo>
+		<unionUnitType></unionUnitType>
+		<unionUnitNo></unionUnitNo>
+		<status></status>
+<operateType></operateType>
+		<claimTime></claimTime>
+		<endTime></endTime>
+		<endReason></endReason>
+		<supervisionMatterList></supervisionMatterList>
+		<feedbackTime></feedbackTime>
+		<feedbackSuggestion></feedbackSuggestion>	
+	</taskDetails>
+	<feedbackUnitInfo>
+		<admInspection>
+         <matterCode></matterCode>
+			<checkActionName></checkActionName>
+			<implementInstitution></implementInstitution>
+			<superviseObject></superviseObject>
+			<checkForm></checkForm>
+			<checkType></checkType>
+			<checkMode></checkMode>
+			<checkResult></checkResult>
+			<checkDate></checkDate>
+			<checkPersonnel></checkPersonnel>
+		</admInspection>
+		<admPunishment>
+<matterCode></matterCode>
+			<punishActionName></punishActionName>
+			<caseSource></caseSource>
+			<illegalFact></illegalFact>
+			<punishAccord></punishAccord>
+			<punishProcedure></punishProcedure>
+			<punishDocumentCode></punishDocumentCode>
+			<setDate></setDate>
+			<penaltyResult></penaltyResult>
+		</admPunishment>
+		<admForce>
+         <matterCode></matterCode>
+			<forceActionName></forceActionName>
+			<illegalFact></illegalFact>
+			<forceType></forceType>
+			<coerciveMeasureType></coerciveMeasureType>
+			<forceExecutionType></forceExecutionType>
+			<forceResult></forceResult>
+			<mandatoryDecisionServiceDate></mandatoryDecisionServiceDate>
+			<forceExtendDate></forceExtendDate>		
+		</admForce>
+		<other>
+         <matterCode></matterCode>
+			<actionName></actionName>
+			<itemSource></itemSource>
+			<superviseMeasure></superviseMeasure>
+			<closingCase></closingCase>
+			<startDate></startDate>
+			<endDate></endDate>
+		</other>
+	</feedbackUnitInfo>
+</supervisionProcess>
+</superviseData>

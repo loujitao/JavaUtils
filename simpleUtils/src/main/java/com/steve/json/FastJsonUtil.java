@@ -1,6 +1,7 @@
 package com.steve.json;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
 
 import java.util.List;
@@ -50,5 +51,16 @@ public class FastJsonUtil {
     public static List<Map<String, Object>> getJsonToListMap(String jsonData) {
         return JSON.parseObject(jsonData, new TypeReference<List<Map<String, Object>>>() {
         });
+    }
+
+    /**
+     * 功能描述：把JSONObject对象转换成较为指定的Java实体类
+     * @param jsonObject
+     * @param clazz    T.class
+     * @param <T>      T-java实体类
+     * @return
+     */
+    public static <T> T jsonToEntity(JSONObject jsonObject, Class<T> clazz){
+        return JSONObject.toJavaObject(jsonObject,clazz);
     }
 }
