@@ -38,7 +38,6 @@ public class ThreadLocalDemo {
         ThreadLocalDemo.setValues("main-thread");
 
         Thread t1=new Thread(new Runnable() {
-            @Override
             public void run() {
                 ThreadLocalDemo.setValues("t1-tread");
                 try {
