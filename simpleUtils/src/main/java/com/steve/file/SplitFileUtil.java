@@ -108,4 +108,6 @@ public class SplitFileUtil {
         }
     }
 
+    private SplitFileUtil() {
+    }
 }

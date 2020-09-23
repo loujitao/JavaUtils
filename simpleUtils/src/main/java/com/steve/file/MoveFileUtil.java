@@ -12,6 +12,7 @@ import java.io.IOException;
  **/
 public class MoveFileUtil {
 
+
     public static void main(String[] args) throws IOException {
         File f = new File("F:\\myTestWorkspace\\1.txt");
         File f1 = new File("F:\\myTestWorkspace\\zip");
@@ -59,4 +60,7 @@ public class MoveFileUtil {
         }
     }
 
+
+    private MoveFileUtil() {
+    }
 }
