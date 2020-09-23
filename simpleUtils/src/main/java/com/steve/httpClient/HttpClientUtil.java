@@ -153,8 +153,7 @@ public class HttpClientUtil {
 		}  finally{
 			method.releaseConnection();
 		}
-        // 请求结束，返回结果  
-       
+        // 请求结束，返回结果
         System.out.println(data);
         System.out.println("post方式提交json数据结束......");
         return data;
